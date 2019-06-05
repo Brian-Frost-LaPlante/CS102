@@ -1,0 +1,11 @@
+10
+George Ho 			95 	96 	97 	98 	99
+Michael Collela 	15 	100	100 100 100
+Brian Frost 		100	100	100 100 100
+Nikola Janjusevic 	85	80	74	90	93
+Karol Wadolowski	90	95	93	83	84
+Carl Gauss			0	100	0	0	0
+Rock Lee			45	53	29	99	95
+Tyler Okonma		10	10	10	10	10
+Barret Oneal		82	85	32	12	90
+Sean Carter			95	90	82	89	95

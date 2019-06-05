@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{titling}
+\title{CS-102 Project 3 -- Palindromes}
+\author{Professor: Brian Frost}
+\date{Summer 2019}
+\pretitle{\begin{center}\huge}
+\posttitle{\end{center}}
+\preauthor{\begin{center}\small}
+\postauthor{\end{center}}
+\predate{\begin{center}\footnotesize}
+\postdate{\end{center}}
+\setlength{\droptitle}{-40pt}
+
+\begin{document}
+\maketitle
+
+\section*{Specifications}
+A palindrome is a word or phrase which reads backwards the same as it does forwards, such as racecar or noon. Palindromes can also be phrases, such as:
+
+\begin{itemize}
+	\item Madam, I'm Adam.
+	\item A man, a plan, a canal: Panama!
+	\item Able was I, ere I saw Elba.
+\end{itemize}
+
+Your task is to write a program which reads strings line-for-line from standard input, and outputs PALINDROME or NOT A PALINDROME depending on whether or not the given string is a palindrome. Strings will contain at most 50 characters, so the input string should be stored in a buffer of that size. Whitespace, case and special characters should be ignored, or else many palindromes won't register as palindromes.
+
+As an example, if my input is a file that looks like
+\begin{verbatim}
+Racecar
+I am trapped in this text file
+hoobleelbooh
+WHATAMI!I~~~MATA	hw
+\end{verbatim}
+My output should be
+\begin{verbatim}
+PALINDROME
+NOT A PALINDROME
+PALINDROME
+\end{verbatim}
+
+You will create 2 strings -- a forward and reverse string -- which you must compare to one another. Your restriction imposed by your evil instructor is that you must store the reverse string in as little memory as possible, freeing up the used memory after each line has been checked. Good style here (checking for available memory, redirecting the pointer after freeing) is important for your grade!
+
+I suggest you maintain a top-down design approach, using functions to perform most tasks. This will not affect correctness, but will make your code much more readable, and thus will affect your style score.
+
+\section*{Submission and Grading}
+Please submit your assignment as a .c file to b.frost@columbia.edu by midnight on Wednesday, July 31. Remember that lateness is penalized! Please state which operating system, text editor and compiler you used in your email. Also, please don't hesitate to ask as many questions as you need through email, or by coming to office hours.
+
+Grading is broken down according to \textbf{Correctness} and \textbf{Style}. Your total grade is out of 100 points.
+
+\noindent\textbf{Correctness (80 points)}: This is simply how well your program fits the exact above-stated specifications.
+
+\noindent\textbf{Style (20 points)}: This is composed of efficient commenting, intuitive spacing and indentation, intuitive variable names, and overall elegant code. Unnecessary statements, poor placement of variable instantiations and otherwise difficult-to-read code will result in a loss of points here. Remeber to put a brief comment at the top of your code explaining the program's operation.
+
+\end{document}
